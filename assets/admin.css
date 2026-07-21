@@ -1,0 +1,317 @@
+/* ═══════════════════════════════════════════════
+   Order Flow Manager — Admin CSS v3.0
+   ═══════════════════════════════════════════════ */
+
+.ofm-wrap { max-width: 1200px; }
+.ofm-wrap h1 { margin-bottom: 4px; }
+
+/* ── Header ───────────────────────────────────── */
+.ofm-header {
+    background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%);
+    color: #fff;
+    padding: 22px 28px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ofm-header h1 { color: #fff; margin: 0 0 4px; font-size: 22px; }
+.ofm-header p  { margin: 0; opacity: .8; font-size: 13px; }
+.ofm-header-status { font-size: 13px; color: #ccc; text-align: right; }
+.ofm-status-dot {
+    display: inline-block;
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+.ofm-status-dot.green { background: #2ecc71; box-shadow: 0 0 6px #2ecc71; }
+.ofm-status-dot.red   { background: #e74c3c; }
+
+/* ── Dashboard Cards ──────────────────────────── */
+.ofm-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+    margin-bottom: 20px;
+}
+.ofm-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow .18s, transform .18s;
+    cursor: pointer;
+}
+.ofm-card:hover {
+    box-shadow: 0 4px 18px rgba(0,0,0,.10);
+    transform: translateY(-2px);
+    color: inherit;
+    text-decoration: none;
+}
+.ofm-card-icon { font-size: 32px; line-height: 1; flex-shrink: 0; }
+.ofm-card-count { font-size: 28px; font-weight: 700; color: #3498db; line-height: 1; margin-bottom: 2px; }
+.ofm-card-info h3 { margin: 0 0 2px; font-size: 14px; color: #2c3e50; }
+.ofm-card-info p  { margin: 0; font-size: 12px; color: #888; }
+
+/* ── Flow diagram ─────────────────────────────── */
+.ofm-flow-box {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-top: 4px;
+}
+.ofm-flow-box h3 { margin: 0 0 16px; font-size: 15px; }
+.ofm-flow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.ofm-flow-step {
+    text-align: center;
+    background: #f8f9fa;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 20px;
+    line-height: 1.4;
+    min-width: 80px;
+}
+.ofm-flow-step small { font-size: 11px; color: #555; display: block; }
+.ofm-flow-arrow { font-size: 20px; color: #aaa; }
+
+/* ── Count badge ──────────────────────────────── */
+.ofm-count {
+    background: #e74c3c;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 1px 9px;
+    vertical-align: middle;
+}
+
+/* ── Toolbar ──────────────────────────────────── */
+.ofm-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.ofm-toolbar input[type="text"] {
+    width: 230px;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 6px;
+}
+
+/* ── Table ────────────────────────────────────── */
+.ofm-table {
+    border-radius: 8px !important;
+    overflow: hidden;
+    border: 1px solid #e0e0e0 !important;
+}
+.ofm-table thead th {
+    background: #2c3e50 !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    padding: 11px 10px !important;
+    border: none !important;
+}
+.ofm-table tbody tr:hover { background: #f0f7ff !important; }
+.ofm-table tbody td { padding: 10px; vertical-align: middle; }
+
+/* ── Badges ───────────────────────────────────── */
+.ofm-badge {
+    display: inline-block;
+    padding: 2px 9px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.ofm-badge-green  { background: #d4edda; color: #155724; }
+.ofm-badge-red    { background: #f8d7da; color: #721c24; }
+.ofm-badge-orange { background: #fff3cd; color: #856404; }
+.ofm-badge-gray   { background: #e2e3e5; color: #383d41; }
+
+/* ── Phone / WA ───────────────────────────────── */
+.ofm-phone { color: #27ae60; font-weight: 600; text-decoration: none; margin-right: 4px; }
+.ofm-phone:hover { text-decoration: underline; }
+.ofm-wa { text-decoration: none; font-size: 15px; }
+
+/* ── Buttons ──────────────────────────────────── */
+.ofm-export-btn {
+    background: #27ae60 !important;
+    border-color: #1e8449 !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+}
+.ofm-export-btn:hover { background: #1e8449 !important; }
+.ofm-delete-btn {
+    background: #e74c3c !important;
+    color: #fff !important;
+    border-color: #c0392b !important;
+    border-radius: 4px !important;
+}
+.ofm-delete-btn:hover { background: #c0392b !important; }
+
+/* ── Empty ────────────────────────────────────── */
+.ofm-empty {
+    background: #fff;
+    text-align: center;
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #888;
+    font-size: 15px;
+}
+
+/* ── CAPI Stats ───────────────────────────────── */
+.ofm-capi-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 14px;
+    margin-bottom: 18px;
+}
+.ofm-stat-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 18px;
+    text-align: center;
+    border-top: 4px solid #ddd;
+}
+.ofm-stat-green  { border-top-color: #27ae60; }
+.ofm-stat-red    { border-top-color: #e74c3c; }
+.ofm-stat-orange { border-top-color: #f39c12; }
+.ofm-stat-blue   { border-top-color: #3498db; }
+.ofm-stat-num   { font-size: 32px; font-weight: 700; line-height: 1; color: #2c3e50; }
+.ofm-stat-label { font-size: 13px; color: #666; margin-top: 6px; }
+
+.ofm-capi-info {
+    background: #eaf4fb;
+    border: 1px solid #bee3f8;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+.ofm-capi-info ul { margin: 8px 0 0 16px; }
+.ofm-capi-info li { margin-bottom: 4px; }
+
+/* ── Fraud Checker ────────────────────────────── */
+.ofm-fraud-search-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 22px;
+    margin-bottom: 18px;
+}
+.ofm-fraud-search-box h2 { margin-top: 0; }
+.ofm-fraud-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 18px 22px;
+    border: 1px solid #ddd;
+    max-width: 400px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    margin-top: 14px;
+}
+.ofm-fraud-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.ofm-fraud-table td { padding: 7px 10px; border-bottom: 1px solid #f0f0f0; font-size: 14px; }
+.ofm-fraud-table td:first-child { color: #555; width: 140px; }
+
+/* Order list fraud */
+.ofm-check-btn {
+    background: #3498db !important;
+    color: #fff !important;
+    border-color: #2980b9 !important;
+    font-size: 11px !important;
+    padding: 2px 8px !important;
+    height: auto !important;
+}
+.ofm-check-btn:hover { background: #2980b9 !important; }
+.ofm-fraud-result { font-size: 11px; margin-top: 4px; line-height: 1.5; }
+
+/* Alerts */
+.ofm-alert { padding: 11px 16px; border-radius: 6px; font-size: 14px; max-width: 400px; margin-top: 10px; }
+.ofm-alert-error   { background: #fdecea; border: 1px solid #f5c6c2; color: #c0392b; }
+.ofm-alert-warning { background: #fef9e7; border: 1px solid #f9e49b; color: #856404; }
+.ofm-loading       { color: #888; font-style: italic; margin-top: 10px; }
+.ofm-info-box { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 18px 22px; margin-top: 16px; }
+.ofm-info-box h3 { margin-top: 0; }
+.ofm-info-box ul { margin: 8px 0 0 16px; }
+.ofm-info-box li { margin-bottom: 5px; font-size: 13px; }
+
+/* ── Settings ─────────────────────────────────── */
+.ofm-settings-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 0;
+    overflow: hidden;
+    max-width: 720px;
+}
+.ofm-settings-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 22px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+.ofm-settings-icon { font-size: 26px; }
+.ofm-settings-header h2 { margin: 0 0 2px; font-size: 16px; }
+.ofm-settings-header p  { margin: 0; font-size: 12px; color: #666; }
+.ofm-settings-status {
+    margin-left: auto;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+.ofm-settings-status.connected    { background: #d4edda; color: #155724; }
+.ofm-settings-status.disconnected { background: #f8d7da; color: #721c24; }
+.ofm-settings-box .form-table { padding: 0 22px; margin-top: 0; }
+.ofm-settings-box .form-table th { width: 160px; font-size: 13px; }
+
+.ofm-info-checklist {
+    background: #eaf4fb;
+    border: 1px solid #bee3f8;
+    border-radius: 6px;
+    padding: 12px 18px;
+    margin: 0 22px 16px;
+    font-size: 13px;
+}
+.ofm-info-checklist ul { margin: 6px 0 0 16px; }
+.ofm-info-checklist li { margin-bottom: 3px; }
+
+.ofm-credit {
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    margin-top: 24px;
+}
+.ofm-credit a {
+    color: #666;
+    text-decoration: none;
+}
+.ofm-credit a:hover {
+    color: #2271b1;
+}
